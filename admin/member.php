@@ -92,7 +92,7 @@ if ($do == 'index') {
     $stmt->execute([$id]);
     $role = $stmt->fetch();
     $count = $stmt->rowCount();
-
+    
 
     
 
@@ -163,9 +163,7 @@ if ($do == 'index') {
 <?php
     }
 } elseif ($do == 'update') {
-    $id = 1;
-    $roles = checkRow('roles', $id);
-    print_r($roles);
+
 } elseif ($do == 'delete') {
 } else {
 }

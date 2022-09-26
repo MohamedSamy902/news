@@ -19,7 +19,7 @@ if ($do == 'index') {
 } elseif ($do == 'store') {
 } elseif ($do == 'edit') {
     $id = isset($_GET['id']) && is_numeric($_GET['id']) ? $_GET['id'] : 0;
-    $role = checkRow('roles', $id);
+    $role = getRowById('roles', $id);
     $count = COUNT($role);
 } elseif ($do == 'update') {
 } elseif ($do == 'delete') {
